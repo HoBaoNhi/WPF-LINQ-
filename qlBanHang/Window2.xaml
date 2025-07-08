@@ -1,0 +1,65 @@
+﻿<Window x:Class="qlBanHang.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:qlBanHang"
+        mc:Ignorable="d"
+        Title="Window2" Height="550" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Ma HD" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="Ten KH" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="Ten SP" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="Ngay lap HD" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="So luong" Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="2"/>
+        <Label Content="Don gia" Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2"/>
+        <Label Content="Thanh tien" IsEnabled="False" Grid.Row="4" Grid.Column="6" Grid.ColumnSpan="2"/>
+
+        <TextBox x:Name="txtMaHD" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtTenKH" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtTenSP" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtSoLuong" Grid.Row="2" Grid.Column="9" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtDonGia" Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtThanhTien" Grid.Row="4" Grid.Column="9" Grid.ColumnSpan="2" IsReadOnly="True"/>
+
+        <DatePicker Name="dtpNgayLapHD" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="2"/>
+
+        <Button Content="Tinh tien SP" Name="btnTinhTien" Grid.Column="12" Grid.Row="2" Grid.ColumnSpan="2"/>
+        
+        <GroupBox Header="Thong tin hoa don" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="13" Grid.RowSpan="3">
+            <DataGrid x:Name="dataGrid">
+            </DataGrid>
+        </GroupBox>
+    </Grid>
+</Window>

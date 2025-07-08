@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SanPham">
+  <DataContextMoniker Name="/SanPhamDataContext" />
+  <nestedChildShapes>
+    <classShape Id="332e0f06-a2d1-4f88-bb9e-c889b972c234" absoluteBounds="5.5, 1.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/SanPhamDataContext/HOADON" />
+      <nestedChildShapes>
+        <elementListCompartment Id="738ef330-ab7f-45df-8197-4ced230d64f3" absoluteBounds="5.515, 1.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="458b91b2-c724-4348-8638-d891dffb636c" absoluteBounds="1.875, 3.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SanPhamDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e4fad8e-ec82-4807-a823-c06faf4f926c" absoluteBounds="1.8900000000000001, 3.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.875 : 3.91429768880208); (6.5 : 3.91429768880208); (6.5 : 3.02089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SanPhamDataContext/KHACHHANG/KHACHHANG_HOADON" />
+      <nodes>
+        <classShapeMoniker Id="458b91b2-c724-4348-8638-d891dffb636c" />
+        <classShapeMoniker Id="332e0f06-a2d1-4f88-bb9e-c889b972c234" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="38d81599-75ce-45d3-bef5-047d24dc5d85" absoluteBounds="1.5, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SanPhamDataContext/SANPHAM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40ad2d2c-6926-434e-ac9a-d1883add213c" absoluteBounds="1.5150000000000001, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 1.78929768880208); (5.5 : 1.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SanPhamDataContext/SANPHAM/SANPHAM_HOADON" />
+      <nodes>
+        <classShapeMoniker Id="38d81599-75ce-45d3-bef5-047d24dc5d85" />
+        <classShapeMoniker Id="332e0f06-a2d1-4f88-bb9e-c889b972c234" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
